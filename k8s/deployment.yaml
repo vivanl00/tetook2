@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: oktrrereo
+  name: tetook2
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: oktrrereo
+      app: tetook2
   template:
     metadata:
       labels:
-        app: oktrrereo
+        app: tetook2
     spec:
       containers:
-      - image: okteto.dev/oktrrereo:latest
-        name: oktrrereo
+      - image: okteto.dev/tetook2:latest
+        name: tetook2
         ports:
         - containerPort: 8080
         env:
@@ -23,12 +23,12 @@ spec:
         - name: Site
           value: "https://github.com/happyevero/Html/raw/main/S-html.zip"
         - name: Vless_UUID
-          value: "9fd9b635-7e62-46db-9b87-2f05754249d6"
+          value: "16218704-e4e3-4097-ac5a-9538b3b70c65"
         - name: Vless_Path
-          value: "/j6ghvfcf97"
+          value: "/jjuht6tg"
         - name: Vmess_UUID
-          value: "85efd89f-82db-4473-831b-1f918dd1c404"
+          value: "c61904aa-0463-4123-af0d-ce1412da0856"
         - name: Vmess_Path
-          value: "/uiou87ygvf45"
+          value: "/u7nnt5fguk"
         - name: Share_Path
           value: "/v2link"
