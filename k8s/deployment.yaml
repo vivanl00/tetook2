@@ -1,0 +1,34 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: oktrrereo
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: oktrrereo
+  template:
+    metadata:
+      labels:
+        app: oktrrereo
+    spec:
+      containers:
+      - image: okteto.dev/oktrrereo:latest
+        name: oktrrereo
+        ports:
+        - containerPort: 8080
+        env:
+        - name: PORT
+          value: "8080"
+        - name: Site
+          value: "https://github.com/happyevero/Html/raw/main/S-html.zip"
+        - name: Vless_UUID
+          value: "9fd9b635-7e62-46db-9b87-2f05754249d6"
+        - name: Vless_Path
+          value: "/j6ghvfcf97"
+        - name: Vmess_UUID
+          value: "85efd89f-82db-4473-831b-1f918dd1c404"
+        - name: Vmess_Path
+          value: "/uiou87ygvf45"
+        - name: Share_Path
+          value: "/v2link"
